@@ -1,0 +1,28 @@
+{
+  "name": "xmtp-growth-engine-bot",
+  "version": "1.0.0",
+  "description": "XMTP Growth Engine — Slack bot for daily content creation",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@slack/bolt": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3",
+    "pino": "^9.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.7.0",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
